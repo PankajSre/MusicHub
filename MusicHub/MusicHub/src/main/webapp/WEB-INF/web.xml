@@ -1,0 +1,6 @@
+<web-app>
+<welcome-file>
+  <welcome-file-page>index.html</welcome-file-page>
+</welcome-file>
+
+</web-app>

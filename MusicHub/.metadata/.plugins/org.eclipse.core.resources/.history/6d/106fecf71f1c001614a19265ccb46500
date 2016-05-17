@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+<title>My MusicHub Website</title>
+</head>
+<body>
+<div class="panel-header">
+<nav class="navbar navbar-inverse">  
+  <div class="container-default" align="center">  
+   
+    <ul class="nav navbar-nav">  
+      <li class="active"><a href="index.html">Home</a></li>  
+      <li><a href="#">Login</a></li>  
+      <li><a href="#">Sign Up</a></li>  
+      <li><a href="#">About Us</a></li> 
+       <li><a href="#">Contact Us</a></li>  
+    </ul>  
+  </div>  
+</nav> 
+</div> 
+<div class="container">
+
+  <div class="jumbotron">
+     This is My Server Site
+  </div>
+</div>
+<div class="panel-footer">
+<nav class="navbar navbar-inverse">
+@Copyrigt for NITT LTD 2016
+</nav>
+</div>
+</body>
+</html>

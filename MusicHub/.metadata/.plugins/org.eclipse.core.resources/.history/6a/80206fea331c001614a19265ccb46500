@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+<title>My MusicHub Website</title>
+
+</head>
+<body>
+<div class="panel-header">
+<nav class="navbar navbar-inverse">  
+  <div class="container-default">  
+   
+    <ul class="nav navbar-nav">  
+      <li class="active"><a href="index.html">Home</a></li>  
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>  
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>  
+      <li><a href="#">About Us</a></li> 
+       <li><a href="#">Contact Us</a></li>  
+    </ul>  
+  </div>  
+</nav> 
+</div>
+<div class="middle" contenteditable="true">
+    <div class="container">
+        <div class="col-md-9 content">
+      <img src="music1.jpg" /> 
+    </div>
+</div>
+</div>
+
+<div class="bottom">
+    <div class="container">
+        
+            @Copyright 2016
+        
+    </div>
+</div>
+</body>
+</html>

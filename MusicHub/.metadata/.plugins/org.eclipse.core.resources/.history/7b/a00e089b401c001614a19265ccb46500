@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+<title>My MusicHub Website</title>
+
+</head>
+<body>
+<button data-toggle="collapse" data-target="#demo">Collapsible</button>
+
+<div id="demo" class="collapse">
+<div class="panel-header">
+<nav class="navbar navbar-inverse">  
+  <div class="container-fluid">  
+   
+    <ul class="nav navbar-nav">  
+      <li class="active"><a href="index.html">Home</a></li>  
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>  
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>  
+      <li><a href="#">About Us</a></li> 
+       <li><a href="#">Contact Us</a></li>  
+    </ul>  
+  </div>  
+</nav> 
+</div>
+</div>
+<div id="the-slider" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+   <li data-target="#the-slider" data-slide-to="0" class="active"></li>
+   <li data-target="#the-slider" data-slide-to="1"></li>
+   <li data-target="#the-slider" data-slide-to="2"></li>
+</ol>
+    <div class="carousel-inner">
+    <div class="item active">
+    <img src="test1.jpg"/>
+    </div>
+    <div class="item">
+    <img src="music1.jpg"/>
+    </div>
+    <div class="item">
+    <img src="music2.jpg"/>
+    </div>
+    
+    </div>
+    <a class="left carousel-control" href="#the-slider" role="button"></a>
+    <a href=""></a>
+    <a href="" ></a>
+</div>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            
+            <div class="account-wall">
+                
+                <form class="form-signin">
+                <input type="text" class="form-control" placeholder="Email" required autofocus>
+                <input type="password" class="form-control" placeholder="Password" required>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">
+                    Sign in</button>
+                <label class="checkbox pull-left">
+                    <input type="checkbox" value="remember-me">
+                    Remember me
+                </label>
+                <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
+                </form>
+            </div>
+            <a href="#" class="text-center new-account">Create an account </a>
+        </div>
+    </div>
+</div>
+<BR><br><br><br><br><br><br><br>
+<div class="botton">
+<nav class="navbar navbar-inverse">  
+  <div class="container-fluid">  
+   @Copyright 2016
+   
+  </div>  
+</nav> 
+</div>
+</body>
+</html>

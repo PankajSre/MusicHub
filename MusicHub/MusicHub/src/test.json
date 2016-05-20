@@ -1,0 +1,23 @@
+[
+  {
+    "id" : 0,
+    "married" : true,
+    "name" : "George Moore",
+    "sons" : null,
+    "daughters" : [
+      {
+        "age" : 25,
+        "name" : "Elizabeth"
+      },
+      {
+        "age" : 28,
+        "name" : "Nancy"
+      },
+      {
+        "age" : 9,
+        "name" : "Sandra"
+      }
+    ]
+  }
+ 
+]

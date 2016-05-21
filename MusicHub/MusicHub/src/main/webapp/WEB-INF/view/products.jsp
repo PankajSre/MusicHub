@@ -1,3 +1,6 @@
+<%@page import="java.util.ArrayList"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page import="com.saini.*"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -122,40 +125,50 @@ table tr:nth-child(even) {
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->
-        
+       
     </header>
-<section data-ng-app="" style="height: 460px;">
+   
+   <section data-ng-app="" style="height: 460px;">
 <div class="table responsive">
 <div class="table">
-  <div data-ng-init="friends =[
-                  {productId : 1001,groupName :'Classic',Name : 'Dholak',Price : 3000, Quantity: 4,Desc : 'This is used by the ladies',image: 'resources/images/products/dholak.jpg'},
-                  {productId : 1002,groupName :'Pop',Name : 'Guitar',Price : 6000, Quantity: 5,Desc : 'The guitar is a popular musical',image: 'resources/images/products/guitar.jpg'},
-                  {productId : 1003,groupName :'Indian',Name : 'Band',Price : 10000, Quantity: 6,Desc : 'This is an indian Instrument',image: 'resources/images/products/secong.jpg'},
-                  {productId : 1004,groupName :'Parsian',Name : 'Tabla',Price : 2500, Quantity: 20,Desc : 'This came from Persian People',image: 'resources/images/products/third.jpg'}
-                	
-                ]"></div>
-<div style="height: 50px;padding-left:100px;width:500px;">
-<label>Search Element <input data-ng-model="searchText" data-ng-init="searchText='${param.item}'"></label>
+<div style="height: 50px;padding-left:200px;width:500px;">
+<label>Search Element <input type="text" data-ng-model="search" data-ng-init="search='${param.item}'"></label>
 </div>
 <br>
 <center>
-<table id="searchTextResults">
+
+<table id="myTable">
   <tr><th>Product ID</th><th>Group Name</th><th>Product Name</th><th>Product Price</th><th>Quantity</th><th>Description</th><th>Image</th></tr>
-  <tr data-ng-repeat="search in friends | filter:searchText">
-    <td>{{search.productId}}</td>
-    <td>{{search.groupName}}</td>
-    <td>{{search.Name}}</td>
-    <td>{{search.Price}}</td>
-    <td>{{search.Quantity}}</td>
-    <td>{{search.Desc}}</td>
-    <td><img data-ng-src="{{search.image}}" height="60" width="100" ></td>
-  </tr>
+  <c:if test="${not empty list}">
+  
+  <c:forEach var="my" items="${list}">
+        <tr>
+          <td><c:out value="${my.productId}"></c:out></td>
+          <td> ${my.groupName}</td>
+          <td><c:out value=" ${my.name}"></c:out></td>
+          <td><c:out value=" ${my.price}"></c:out></td>
+          <td><c:out value=" ${my.quantity}"></c:out></td>
+         <td><c:out value=" ${my.description}"></c:out></td>
+         <td><img src="${my.imagePath}" height="50" width=50 /></td>
+        </tr>
+      </c:forEach>
+      </c:if>
 </table>
+
+
 </center>
 </div>
 </div>
 
 </section>
+<script type="text/javascript">
+$(document).ready(function()
+        {
+
+        $('myTable').dataTable();
+        });
+
+</script>
 <footer id="footer" class="midnight-blue">
         <div class="container">
             <div class="row">

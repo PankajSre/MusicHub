@@ -154,7 +154,7 @@ li,ul,body,input{margin:0; padding:0; list-style:none}
 <div>
 <ul class="form-header">
 <li><label for="login"><i class="fa fa-lock"></i> LOGIN<label for="login"></li>
-<li><label for="signup"><i class="fa fa-credit-card"></i> REGISTER</label></li>
+
 </ul>
 </div>
 
